@@ -1,0 +1,26 @@
+{
+    "name": "log/log",
+    "description": "log",
+    "type": "project",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "swiftmailer/swiftmailer":"^6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Log\\":"src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Log\\Tests\\":"tests/"
+        }
+    },
+    "license": "MIT"
+}
